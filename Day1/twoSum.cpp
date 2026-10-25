@@ -21,6 +21,16 @@ public:
         //     }
         // }
         // return {-1, -1};
+        unordered_map<int, int> foundItems;
+        for (int value : values)
+        {
+            if (foundItems[target - value])
+            {
+                return {value, target - value};
+            }
+            foundItems[value] = 1;
+        }
+        return {-1, -1};
     }
 };
 
