@@ -8,20 +8,20 @@ class TwoSum
 {
 public:
     // The bruteforce approcach
-    // vector<int> twoSum(const vector<int> &values, int target)
-    // {
-    //     for (int i = 0; i < values.size(); i++)
-    //     {
-    //         for (int j = i + 1; j < values.size(); j++)
-    //         {
-    //             if (values[i] + values[j] == target)
-    //             {
-    //                 return {values[i], values[j]};
-    //             }
-    //         }
-    //     }
-    //     return {-1, -1};
-    // }
+    vector<int> twoSum(const vector<int> &values, int target)
+    {
+        // for (int i = 0; i < values.size(); i++)
+        // {
+        //     for (int j = i + 1; j < values.size(); j++)
+        //     {
+        //         if (values[i] + values[j] == target)
+        //         {
+        //             return {values[i], values[j]};
+        //         }
+        //     }
+        // }
+        // return {-1, -1};
+    }
 };
 
 int main()
