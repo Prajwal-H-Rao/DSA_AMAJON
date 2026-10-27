@@ -18,3 +18,9 @@ void Input::getIntegerVector(vector<int> &inputVector, int size)
         inputVector.push_back(element);
     }
 }
+
+void Input::getString(std::string &inputString)
+{
+    cout << "Enter the string : " << endl;
+    cin >> inputString;
+}
