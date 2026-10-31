@@ -1,4 +1,10 @@
-class Solution
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#include "../include/inputHandler.h"
+
+class MergeSorted
 {
 public:
 public:
@@ -26,3 +32,17 @@ public:
         }
     }
 };
+
+int main()
+{
+    vector<int> nums1;
+    vector<int> nums2;
+    Input().getIntegerVector(nums1, 6);
+    Input().getIntegerVector(nums2, 3);
+    MergeSorted().merge(nums1, nums1.size(), nums2, nums2.size());
+
+    for (int ele : nums1)
+        cout << ele << " ";
+
+    return 0;
+}
