@@ -35,11 +35,10 @@ public:
 
 int main()
 {
-    vector<int> nums1;
-    vector<int> nums2;
+    vector<int> nums1, nums2;
     Input().getIntegerVector(nums1, 6);
     Input().getIntegerVector(nums2, 3);
-    MergeSorted().merge(nums1, nums1.size(), nums2, nums2.size());
+    MergeSorted().merge(nums1, 3, nums2, 3);
 
     for (int ele : nums1)
         cout << ele << " ";
