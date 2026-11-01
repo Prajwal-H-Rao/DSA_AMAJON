@@ -35,7 +35,7 @@ int main()
 
     vector<int> res = InOrderTraversal().inorderTraversal(root);
 
-    cout << "{";
+    cout << "{ ";
     for (int ele : res)
         cout << ele << " ";
     cout << "}" << endl;
